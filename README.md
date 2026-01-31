@@ -35,38 +35,32 @@ limitations under the License.
 
 > Create an iterator for generating pseudorandom numbers having integer values.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/random-iter-randi
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-iterator = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randi@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var iterator = require( 'path/to/vendor/umd/random-iter-randi/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randi@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.iterator;
-})();
-</script>
+var iterator = require( '@stdlib/random-iter-randi' );
 ```
 
 #### iterator( \[options] )
@@ -216,13 +210,8 @@ The returned iterator protocol-compliant object has the following properties:
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randi@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var iterator = require( '@stdlib/random-iter-randi' );
 
 var it;
 var r;
@@ -241,11 +230,6 @@ while ( true ) {
     }
     console.log( r.value );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -293,7 +277,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -319,8 +303,8 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 -->
 
-[chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
+[chat-image]: https://img.shields.io/badge/zulip-join_chat-brightgreen.svg
+[chat-url]: https://stdlib.zulipchat.com
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -339,17 +323,17 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/random-iter-randi/main/LICENSE
 
-[@stdlib/random/base/mt19937]: https://github.com/stdlib-js/random-base-mt19937/tree/umd
+[@stdlib/random/base/mt19937]: https://github.com/stdlib-js/random-base-mt19937
 
-[@stdlib/random/base/minstd]: https://github.com/stdlib-js/random-base-minstd/tree/umd
+[@stdlib/random/base/minstd]: https://github.com/stdlib-js/random-base-minstd
 
-[@stdlib/random/base/minstd-shuffle]: https://github.com/stdlib-js/random-base-minstd-shuffle/tree/umd
+[@stdlib/random/base/minstd-shuffle]: https://github.com/stdlib-js/random-base-minstd-shuffle
 
 <!-- <related-links> -->
 
-[@stdlib/random/base/randi]: https://github.com/stdlib-js/random-base-randi/tree/umd
+[@stdlib/random/base/randi]: https://github.com/stdlib-js/random-base-randi
 
-[@stdlib/random/iter/randu]: https://github.com/stdlib-js/random-iter-randu/tree/umd
+[@stdlib/random/iter/randu]: https://github.com/stdlib-js/random-iter-randu
 
 <!-- </related-links> -->
 
